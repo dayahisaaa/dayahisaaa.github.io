@@ -21,7 +21,7 @@ nav#sidebar {
   padding: 20px 0;
   z-index: 1000;
   transition: right 0.3s ease;
-  overflow-y: auto; /* Scrollable sidebar on small devices */
+  overflow-y: auto; /* Allow scrolling on small devices */
 }
 
 nav#sidebar a {
@@ -55,12 +55,17 @@ nav#sidebar a:hover {
 }
 
 #nav-toggle {
-  display: none; /* Hide checkbox */
+  display: none; /* Hide the checkbox */
 }
 
-/* Sidebar Toggle */
+/* Sidebar Toggle Logic */
 #nav-toggle:checked + #nav-button + nav#sidebar {
-  right: 0; /* Show sidebar */
+  right: 0; /* Show the sidebar when checked */
+}
+
+/* Content Accessibility */
+#content {
+  margin-top: 70px; /* Ensure content is visible below the header and button */
 }
 
 /* General Layout */
@@ -74,31 +79,6 @@ header {
 header .name {
   font-family: 'Dancing Script', cursive;
   font-size: 2.5rem;
-}
-
-nav {
-  position: fixed;
-  top: 0;
-  right: 0;
-  background-color: #722F37; /* Wine */
-  padding: 10px 20px;
-  z-index: 1000;
-}
-
-nav a {
-  color: #FFFFFF; /* White */
-  text-decoration: none;
-  font-family: 'Roboto', sans-serif;
-  font-weight: bold;
-  margin: 0 15px;
-  padding: 8px 15px;
-  border-radius: 20px;
-  transition: background-color 0.3s ease;
-}
-
-nav a:hover {
-  background-color: #EDE8D0; /* Rose Wine */
-  color: #722F37;
 }
 
 #hero {
@@ -142,13 +122,6 @@ section {
   text-align: center;
 }
 
-h2 {
-  font-family: 'Roboto', sans-serif;
-  font-size: 2.5rem;
-  color: #E91E63; 
-  margin-bottom: 20px;
-}
-
 .card {
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -168,51 +141,18 @@ footer {
 }
 
 /* Responsive Fixes */
-@media (max-width: 1024px) {
-  #hero h1 {
-    font-size: 2.5rem;
-  }
-
-  .card {
-    max-width: 90%;
-  }
-
-  nav a {
-    font-size: 0.9rem;
-  }
-}
-
-@media (max-width: 768px) {
-  nav a {
-    font-size: 0.8rem;
-  }
-
-  #hero h1 {
-    font-size: 2rem;
-  }
-
-  .card {
-    padding: 15px;
-  }
-}
-
 @media (max-width: 480px) {
-  #hero {
-    height: auto;
-    padding: 20px;
-  }
-
-  #hero h1 {
-    font-size: 1.8rem;
-  }
-
   nav#sidebar {
     width: 80%; /* Sidebar width adjusts for small screens */
   }
 
   nav a {
-    font-size: 0.7rem;
+    font-size: 0.8rem;
     padding: 5px;
+  }
+
+  #hero h1 {
+    font-size: 1.8rem;
   }
 
   footer {
@@ -223,4 +163,3 @@ footer {
     max-width: 95%;
   }
 }
-

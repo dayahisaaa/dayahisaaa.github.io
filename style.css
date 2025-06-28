@@ -1,11 +1,12 @@
-body 
-    {
-      margin: 0;
-      font-family: 'Roboto', sans-serif;
-      background-color: #EDE8D0; /* beige */
-      color: #333; /* Dark text */
-    }
-   
+/* General Reset and Styling */
+body {
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #EDE8D0; /* beige */
+  color: #333; /* Dark text */
+}
+
+/* Sidebar */
 nav#sidebar {
   position: fixed;
   top: 0;
@@ -61,305 +62,103 @@ nav#sidebar a:hover {
   right: 0; /* Show the sidebar when checked */
 }
 
-    header {
-      background-color: #722F37; /* Wine */
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
+/* Header */
+header {
+  background-color: #722F37; /* Wine */
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
 
-    header .name {
-      font-family: 'Dancing Script', cursive;
-      font-size: 2.5rem;
-    }
+header .name {
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.5rem;
+}
 
-    nav {
-      position: fixed;
-      top: 0;
-      right: 0;
-      background-color: #722F37; /* Wine */
-      padding: 10px 20px;
-      z-index: 1000;
-    }
+/* Hero Section */
+#hero {
+  position: relative;
+  height: 100vh;
+  color: white;
+  text-align: center;
+  overflow: hidden;
+}
 
-    nav a {
-      color: #FFFFFF; /* white */
-      text-decoration: none;
-      font-family: 'Roboto', sans-serif;
-      font-weight: bold;
-      margin: 0 15px;
-      padding: 8px 15px;
-      border-radius: 20px;
-      transition: background-color 0.3s ease;
-    }
+#hero video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
 
-    nav a:hover {
-      background-color: #EDE8D0; /* Rose Wine */
-      color: #722F37;
-    }
+#hero-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 20px;
+  z-index: 1;
+}
 
-    #hero {
-      position: relative;
-      height: 100vh;
-      color: white;
-      text-align: center;
-      overflow: hidden;
-    }
+#hero h1 {
+  font-size: 3rem;
+  font-family: 'Dancing Script', cursive;
+  margin-bottom: 20px;
+}
 
-    #hero video {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      z-index: -1;
-    }
+#hero p {
+  font-size: 1.2rem;
+}
 
-    #hero-content {
-      position: relative;
-      top: 50%;
-      transform: translateY(-50%);
-      padding: 20px;
-      z-index: 1;
-    }
+/* Responsive Design */
+@media (max-width: 768px) {
+  header .name {
+    font-size: 2rem;
+  }
 
-    #hero h1 {
-      font-size: 3rem;
-      font-family: 'Dancing Script', cursive;
-      margin-bottom: 20px;
-    }
+  nav#sidebar {
+    width: 200px; /* Adjust sidebar width */
+  }
 
-    #hero p {
-      font-size: 1.2rem;
-    }
+  #hero h1 {
+    font-size: 2rem;
+  }
 
-    section {
-      padding: 50px 20px;
-      text-align: center;
-    }
+  #hero p {
+    font-size: 1rem;
+  }
 
-    h2 {
-      font-family: 'Roboto', sans-serif;
-      font-size: 2.5rem;
-      color: #E91E63; 
-      margin-bottom: 20px;
-    }
+  .card {
+    max-width: 100%; /* Full width on smaller screens */
+    margin: 20px 10px;
+  }
 
-    .card {
-      background-color: white;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      border-radius: 15px;
-      padding: 20px;
-      margin: 20px auto;
-      max-width: 800px;
-      font-family: 'Roboto', sans-serif;
-      text-align: left;
-    }
+  .work-image img {
+    width: 90%; /* Fit images better on mobile */
+    margin: auto;
+  }
 
-    .card ul {
-      list-style: none;
-      padding: 0;
-    }
+  footer {
+    padding: 10px; /* Adjust padding */
+  }
 
-    .card li {
-      font-size: 1rem;
-      margin: 10px 0;
-      position: relative;
-      padding-left: 30px;
-    }
+  footer a {
+    font-size: 0.8rem; /* Adjust link size */
+  }
+}
 
-    .card li::before {
-      content: '❤';
-      color: #722F37; 
-      font-size: 1.2rem;
-      position: absolute;
-      left: 0;
-      top: 0;
-    }
+@media (min-width: 769px) {
+  .card {
+    max-width: 800px;
+  }
 
-    footer {
-      background-color: #722F37;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
-
-    footer a {
-      color: #EDE8D0; 
-      text-decoration: none;
-    }
-
-    .work-image {
-      margin: 20px 0;
-      text-align: center;
-    }
-
-    .work-image img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 15px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-     .colorful-name {
-    font-family: 'Roboto';
+  #hero h1 {
     font-size: 4rem;
-    font-weight: bold;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    gap: 0.2rem;
   }
 
-  .colorful-name span {
-    display: inline-block;
-    animation: wiggle 1.5s ease-in-out infinite;
-  }
-
-  .colorful-name span:nth-child(1) { animation-delay: 0s; }
-  .colorful-name span:nth-child(2) { animation-delay: 0.1s; }
-  .colorful-name span:nth-child(3) { animation-delay: 0.2s; }
-  .colorful-name span:nth-child(4) { animation-delay: 0.3s; }
-  .colorful-name span:nth-child(5) { animation-delay: 0.4s; }
-  .colorful-name span:nth-child(6) { animation-delay: 0.5s; }
-  .colorful-name span:nth-child(7) { animation-delay: 0.6s; }
-  .colorful-name span:nth-child(8) { animation-delay: 0.7s; }
-
-  @keyframes wiggle {
-    0%, 100% {
-      transform: translate(0, 0);
-    }
-    25% {
-      transform: translate(-2px, -5px) rotate(-3deg);
-    }
-    50% {
-      transform: translate(2px, 5px) rotate(3deg);
-    }
-    75% {
-      transform: translate(-2px, 0) rotate(-1deg);
-    }
-  }
-
-  .description {
-    margin-top: 1rem;
+  #hero p {
     font-size: 1.5rem;
-    color: #FFFFFF;
   }
-
-     .skill-item {
-      position: relative;
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-    }
-
-    .skill-item:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .skill-item:hover::before {
-      content: '';
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      border: 2px solid #FFD700;
-      border-radius: 8px;
-      pointer-events: none;
-      animation: pulse 1s infinite;
-    }
-
-    @keyframes pulse {
-      0% {
-        transform: scale(1);
-        opacity: 1;
-      }
-      100% {
-        transform: scale(1.1);
-        opacity: 0;
-      }
-    }
-
-     @keyframes floatTitle {
-      0%, 100% {
-        transform: translateY(-10px);
-      }
-      50% {
-        transform: translateY(10px);
-      }
-    }
-
-    @keyframes cardFloat {
-      0%, 100% {
-        transform: translateY(-10px) rotate(0deg);
-      }
-      50% {
-        transform: translateY(10px) rotate(2deg);
-      }
-    }
-
-    @keyframes cardFloatReverse {
-      0%, 100% {
-        transform: translateY(10px) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-10px) rotate(-2deg);
-      }
-    }
-
-    .floating-shapes {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      z-index: 1;
-      overflow: hidden;
-    }
-
-    .shape {
-      position: absolute;
-      width: 80px;
-      height: 80px;
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 50%;
-      animation: floatShapes 12s ease-in-out infinite;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    }
-
-    .shape:nth-child(1) {
-      top: 10%;
-      left: 15%;
-      animation-delay: 2s;
-      width: 100px;
-      height: 100px;
-    }
-
-    .shape:nth-child(2) {
-      top: 50%;
-      left: 60%;
-      animation-delay: 4s;
-      width: 60px;
-      height: 60px;
-    }
-
-    .shape:nth-child(3) {
-      top: 80%;
-      left: 30%;
-      animation-delay: 6s;
-      width: 120px;
-      height: 120px;
-    }
-
-    @keyframes floatShapes {
-      0% {
-        transform: translateY(0) rotate(0deg);
-      }
-      50% {
-        transform: translateY(-30px) rotate(20deg);
-      }
-      100% {
-        transform: translateY(0) rotate(0deg);
-      }
-    }
+}

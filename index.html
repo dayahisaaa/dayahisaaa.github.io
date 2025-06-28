@@ -10,37 +10,40 @@
 </head>
 <body>
 
-  <!-- Navigation -->
   <input type="checkbox" id="nav-toggle" hidden>
   <label for="nav-toggle" id="nav-button">&#x22EE;</label>
+
   <nav id="sidebar">
-    <a href="#about-me">About Me</a>
-    <a href="#skills">Skills</a>
+     <a href="#About Me">About Me</a>
+    <a href="#Skills">Skills</a>
     <a href="#experience">Experience</a>
-    <a href="#leadership">Leadership</a>
+     <a href="#leadership">Leadership</a>
     <a href="#education">Education</a>
     <a href="#songs">Songs</a>
     <a href="#family">Family</a>
-    <a href="#contact">Contact</a>
+    <a href="#contact-inquiries">Contact</a>
   </nav>
+</body>
 
-  <!-- Header -->
-  <header>
-    <div class="colorful-name">
-      <span style="color: #FF5733;">D</span>
-      <span style="color: #FFC300;">A</span>
-      <span style="color: #DAF7A6;">Y</span>
-      <span style="color: #FF5733;">A</span>
-      <span style="color: #FFC300;">H</span>
-      <span style="color: #FF5733;">I</span>
-      <span style="color: #FFC300;">S</span>
-      <span style="color: #DAF7A6;">A</span>
-    </div>
-    <p class="description">Information Management Student</p>
-  </header>
+ <header>
 
-  <!-- Hero Section -->
-  <section id="hero">
+<link rel="icon" href="favicon.png" type="image/png">
+
+  <div class="colorful-name">
+    <span style="color: #FF5733;">D</span>
+    <span style="color: #FFC300;">A</span>
+    <span style="color: #DAF7A6;">Y</span>
+    <span style="color: #FF5733;">A</span>
+    <span style="color: #FFC300;">H</span>
+    <span style="color: #FF5733;">I</span>
+    <span style="color: #FFC300;">S</span>
+    <span style="color: #DAF7A6;">A</span>
+  </div>
+  
+  <p class="description">Information Management Student</p>
+</header>
+
+<section id="hero">
     <video autoplay muted loop>
       <source src="mia.mp4" type="video/mp4">
     </video>
@@ -50,37 +53,58 @@
     </div>
   </section>
 
-  <!-- About Me Section -->
-  <section id="about-me" class="section">
-    <div class="container">
-      <div class="image-container">
-        <img src="cantik.jpg" alt="Dayah's Picture" class="profile-pic">
-      </div>
-      <div class="text-container">
-        <h2>About Me</h2>
-        <p>I’m Nur Hidayah binti Mohammad Isa, a diploma student in Information Management. I’m passionate about learning how to manage and organize information efficiently, focusing on using technology to solve problems and improve workflows.</p>
-        <p>I enjoy working in teams, exchanging ideas, and exploring innovative ways to make data more accessible and meaningful.</p>
-      </div>
+<section id="About Me" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; box-sizing: border-box; color: #000; text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);">
+  <div style="flex: 1; max-width: 400px; text-align: center;">
+    <div style="display: inline-block; padding: 12px; border: 8px solid transparent; border-image: linear-gradient(45deg, #FFD1DC, #722F37) 1; border-radius: 20px;">
+      <img src="cantik.jpg"  
+           style="width: 100%; max-width: 300px; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);">
     </div>
+  </div>
+  <div style="flex: 1; max-width: 600px; margin: 0 20px; text-align: justify;">
+    <h2 style="font-family: 'Dancing Script', cursive; color: #722F37; font-size: 2.5rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+      About Me
+    </h2>
+    <h1 style="font-family: 'Roboto', sans-serif; color: #722F37; font-size: 2rem;">Hello, </h1>
+    <p style="line-height: 1.8; font-size: 1.2rem; font-family: 'Roboto', sans-serif; color: #000;">
+      I’m Nur Hidayah binti Mohammad Isa, a diploma student in Information Management. I’m passionate about learning how to manage and organize information efficiently, focusing on using technology to solve problems and improve workflows. My studies have equipped me with skills in data organization, information systems, and creative problem-solving. 
+    </p>
+    <p style="line-height: 1.8; font-size: 1.2rem; font-family: 'Roboto', sans-serif; color: #000;">
+      I enjoy working in teams, exchanging ideas, and exploring innovative ways to make data more accessible and meaningful. I’m dedicated to continuously growing my knowledge and applying my skills to contribute to impactful projects and drive positive change in any environment I’m part of.
+    </p>
+  </div>
+</section>
+
+<section id="Skills" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; justify-content: space-around; align-items: center; box-sizing: border-box;">
+  <h2 style="font-family: 'Dancing Script', cursive; color: #722F37; font-size: 2.5rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+    Skills
+  </h2>
+  <ul style="list-style: none; padding: 0; font-family: 'Georgia', serif; font-size: 1.2rem; color: #333;">
+    <li class="skill-item" style="margin: 0.5rem 0; padding: 0.8rem; border: 2px solid #722F37; border-radius: 8px; display: inline-block; width: 60%; background: #fff;">
+      Data Analysis & Visualization
+    </li>
+    <li class="skill-item" style="margin: 0.5rem 0; padding: 0.8rem; border: 2px solid #722F37; border-radius: 8px; display: inline-block; width: 60%; background: #fff;">
+      Information Systems Management
+    </li>
+    <li class="skill-item" style="margin: 0.5rem 0; padding: 0.8rem; border: 2px solid #722F37; border-radius: 8px; display: inline-block; width: 60%; background: #fff;">
+      Web Development: HTML, CSS, JavaScript
+    </li>
+    <li class="skill-item" style="margin: 0.5rem 0; padding: 0.8rem; border: 2px solid #722F37; border-radius: 8px; display: inline-block; width: 60%; background: #fff;">
+      Microsoft Office Suite: Word, Excel, PowerPoint
+    </li>
+    <li class="skill-item" style="margin: 0.5rem 0; padding: 0.8rem; border: 2px solid #722F37; border-radius: 8px; display: inline-block; width: 60%; background: #fff;">
+      Team Leadership & Project Management
+    </li>
+  </ul>
   </section>
 
-  <!-- Skills Section -->
-  <section id="skills" class="section">
-    <h2>Skills</h2>
-    <ul class="skills-list">
-      <li>Data Analysis & Visualization</li>
-      <li>Information Systems Management</li>
-      <li>Web Development: HTML, CSS, JavaScript</li>
-      <li>Microsoft Office Suite: Word, Excel, PowerPoint</li>
-      <li>Team Leadership & Project Management</li>
-    </ul>
-  </section>
-
-  <!-- Work Experience Section -->
-  <section id="experience" class="section">
-    <h2>Work Experience</h2>
-    <div class="experience-container">
-      <div class="experience-card">
+<section id="experience" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; box-sizing: border-box;">
+  <div style="width: 100%; max-width: 1200px;">
+    <h2 style="font-family: 'Dancing Script', cursive; color: #722F37; font-size: 2.5rem; margin-bottom: 1.5rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+      Work Experience 
+    </h2>
+    <div style="display: grid; grid-template-columns: repeat(2, 1fr); gap: 20px;">
+      <!-- KK Mart -->
+      <div class="work-card" style="background-color: #D98C96; border-radius: 10px; padding: 15px; text-align: left; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         <h3>Cashier: KK Mart</h3>
         <p>April 2022 - Sept 2022</p>
         <ul>
@@ -88,7 +112,17 @@
           <li>Built strong customer relationships.</li>
         </ul>
       </div>
-      <div class="experience-card">
+      
+      <div class="work-card" style="background-color: #FFF7F3; border-radius: 10px; padding: 15px; text-align: left; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h3>Waiter: Kafe Kampung Kaw</h3>
+        <p>January 2023</p>
+        <ul>
+          <li>Reset tables for faster customer turnover.</li>
+          <li>Maintained customer satisfaction.</li>
+        </ul>
+      </div>
+      
+      <div class="work-card" style="background-color: #D98C96; border-radius: 10px; padding: 15px; text-align: left; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
         <h3>Content Creator: Kopi & Kueh</h3>
         <p>May 2023 - Feb 2024</p>
         <ul>
@@ -96,57 +130,167 @@
           <li>Created content for target audiences.</li>
         </ul>
       </div>
-    </div>
-  </section>
-
-  <!-- Songs Section -->
-  <section id="songs" class="section">
-    <h2>Favorite Songs</h2>
-    <div class="songs-container">
-      <div class="song-item">
-        <h3>Piledriver Waltz</h3>
-        <img src="image1.jpg" alt="Piledriver Waltz" class="song-thumbnail">
-        <audio controls>
-          <source src="song 1.mp3" type="audio/mpeg">
-        </audio>
-      </div>
-      <div class="song-item">
-        <h3>Fair Trade</h3>
-        <img src="image3.jpg" alt="Fair Trade" class="song-thumbnail">
-        <audio controls>
-          <source src="song 3.mp3" type="audio/mpeg">
-        </audio>
+     
+      <div class="work-card" style="background-color: #FFF7F3; border-radius: 10px; padding: 15px; text-align: left; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);">
+        <h3>Waiter: Warung Kopi Leq</h3>
+        <p>Current</p>
+        <ul>
+          <li>Adhered to food safety regulations.</li>
+          <li>Addressed allergy concerns effectively.</li>
+        </ul>
       </div>
     </div>
+  </div>
+</section>
+
+<section id="leadership" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; align-items: center; justify-content: center; box-sizing: border-box;">
+  <div style="width: 100%; max-width: 1200px;">
+    <h2>Leadership & Activities</h2>
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px;">
+      <!-- Leadership 1 -->
+      <div style="background: linear-gradient(135deg, #D98C96, #EDE8D0); border-radius: 10px; padding: 15px; text-align: left;">
+        <h3>Exco Keusahawanan</h3>
+        <p>2023-2024</p>
+        <p>Led over 20 university events.</p>
+      </div>
+     
+      <div style="background: linear-gradient(135deg, #D98C96, #EDE8D0); border-radius: 10px; padding: 15px; text-align: left;">
+        <h3>Exco Multimedia</h3>
+        <p>Jan 2024 - Feb 2024</p>
+        <p>Designed posters and social media campaigns.</p>
+      </div>
+      
+      <div style="background: linear-gradient(135deg, #D98C96, #EDE8D0); border-radius: 10px; padding: 15px; text-align: left;">
+        <h3>Band Member</h3>
+        <p>Current</p>
+        <p>Performed captivating music.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="education" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; align-items: center; justify-content: center; box-sizing: border-box; position: relative; overflow: hidden;">
+  <div style="width: 100%; max-width: 1400px; position: relative;">
+    <h2 style="font-family: 'Dancing Script', cursive; color: #722F37; font-size: 3rem; margin-bottom: 2rem; text-shadow: 2px 2px 6px rgba(255, 255, 255, 0.3); animation: floatTitle 4s ease-in-out infinite;">
+      Education Background
+    </h2>
+    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 40px; position: relative; z-index: 2;">
+      
+      <div class="edu-card" style="background: radial-gradient(circle, #FF7E79, #FFD1DC); border-radius: 15px; padding: 40px; width: 320px; height: 220px; text-align: center; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); overflow: hidden; position: relative; animation: cardFloat 5s ease-in-out infinite;">
+        <h2 style="font-family: 'Dancing Script', sans-serif; color: #722F37;">SMK Intan Perdana</h2>
+        <p style="font-family: 'Roboto', sans-serif; color: #000; font-size: 1rem; margin-top: 15px;">Studied <strong>Accounting</strong> for SPM.</p>
+      </div>
+      
+      <div class="edu-card" style="background: radial-gradient(circle, #FFD1DC, #FF7E79); border-radius: 15px; padding: 40px; width: 320px; height: 220px; text-align: center; box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); overflow: hidden; position: relative; animation: cardFloatReverse 5s ease-in-out infinite;">
+        <h2 style="font-family: 'Dancing Script', sans-serif; color: #722F37;">UiTM Rembau</h2>
+        <p style="font-family: 'Roboto', sans-serif; color: #000; font-size: 1rem; margin-top: 15px;">Pursued a <strong>Diploma in Information Management</strong>.</p>
+      </div>
+    </div>
+ 
+    <div class="floating-shapes">
+      <div class="shape"></div>
+      <div class="shape"></div>
+      <div class="shape"></div>
+    </div>
+  </div>
   </section>
 
-  <!-- Family Section -->
-  <section id="family" class="section">
-    <h2>My Family</h2>
-    <video controls class="family-video">
-      <source src="fam.mp4" type="video/mp4">
-    </video>
-  </section>
+<section id="songs" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; box-sizing: border-box;">
+  <div style="flex: 1; max-width: 800px;">
+    <h2 style="font-family: 'Dancing Script', cursive; color: #722F37; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+      Favorite Songs
+    </h2>
+    <div style="overflow-x: auto;">
+      <table style="width: 100%; border-collapse: collapse; margin: 0 auto; animation: fadeIn 1s;">
+        <thead>
+          <tr style="background: #722F37; color: #EDE8D0;">
+            <th style="padding: 15px; font-size: 1.1rem; font-family: 'Roboto', sans-serif;">Song Title</th>
+            <th style="padding: 15px; font-size: 1.1rem; font-family: 'Roboto', sans-serif;">Audio Player</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr class="song-row">
+            <td style="padding: 15px; font-size: 1rem; font-family: 'Roboto', sans-serif;">
+              Piledriver Waltz<br>
+              <img src="image1.jpg" alt="Piledriver Waltz" style="width: 150px; height: auto; margin-top: 10px; border-radius: 8px;">
+            </td>
+            <td style="padding: 15px; font-size: 1rem; font-family: 'Roboto', sans-serif;">
+              <audio controls style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); border-radius: 8px;">
+                <source src="song 1.mp3" type="audio/mpeg">
+              </audio>
+            </td>
+          </tr>
+          <tr class="song-row">
+            <td style="padding: 15px; font-size: 1rem; font-family: 'Roboto', sans-serif;">
+              Fair Trade<br>
+              <img src="image3.jpg" alt="Fair Trade" style="width: 150px; height: auto; margin-top: 10px; border-radius: 8px;">
+            </td>
+            <td style="padding: 15px; font-size: 1rem; font-family: 'Roboto', sans-serif;">
+              <audio controls style="box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); border-radius: 8px;">
+                <source src="song 3.mp3" type="audio/mpeg">
+              </audio>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
 
-  <!-- Contact Section -->
-  <section id="contact" class="section">
-    <h2>Contact Me</h2>
-    <div class="contact-container">
-      <a href="mailto:hidayahisa04@gmail.com">
-        <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email">
+<section id="family" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; box-sizing: border-box;">
+  <div style="flex: 1; max-width: 600px;">
+    <h2 style="font-family: 'Dancing Script', cursive; color: #722F37; font-size: 2.5rem; margin-bottom: 1rem; text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);">
+      My Family
+    </h2>
+    <div style="position: relative; overflow: hidden; border-radius: 15px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); animation: fadeIn 1.5s;">
+      <video controls style="width: 100%; border-radius: 15px;">
+        <source src="fam.mp4" type="video/mp4">
+      </video>
+    </div>
+  </div>
+</section>
+
+<section id="contact-inquiries" style="height: 100vh; width: 100%; padding: 2rem; margin: 0; text-align: center; background-image: url('back2.jpg'); background-size: cover; background-position: center; background-repeat: no-repeat; display: flex; flex-wrap: wrap; align-items: center; justify-content: space-around; box-sizing: border-box; gap: 20px;">
+  <div style="flex: 1; max-width: 400px; text-align: center;">
+    <h2 style="font-family: 'Dancing Script', sans-serif; color: #722F37; font-size: 2.5rem; margin-bottom: 20px;">
+      Contact Me
+    </h2>
+    <div style="display: flex; justify-content: center; align-items: center; flex-wrap: wrap; gap: 20px;">
+      <a href="mailto:hidayahisa04@gmail.com" style="text-decoration: none;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #D98C96, #EDE8D0); border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
+          <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email" style="width: 40px; height: 40px;">
+        </div>
       </a>
-      <a href="tel:601139988223">
-        <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone">
+      <a href="tel:601139988223" style="text-decoration: none;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #D98C96, #EDE8D0); border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
+          <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone" style="width: 40px; height: 40px;">
+        </div>
       </a>
-      <a href="https://instagram.com/0rcheed" target="_blank">
-        <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram">
+      <a href="https://instagram.com/0rcheed" target="_blank" style="text-decoration: none;">
+        <div style="width: 100px; height: 100px; background: linear-gradient(135deg, #D98C96, #EDE8D0); border-radius: 50%; display: flex; justify-content: center; align-items: center; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);">
+          <img src="https://img.icons8.com/color/48/000000/instagram-new.png" alt="Instagram" style="width: 40px; height: 40px;">
+        </div>
       </a>
     </div>
-  </section>
+  </div>
+  <div style="flex: 1; max-width: 600px; text-align: center;">
+    <h2 style="font-family: 'Dancing Script', sans-serif; color: #722F37; font-size: 2.5rem; margin-bottom: 30px;">
+      Stay in the Loop!
+    </h2>
+    <p style="font-family: 'Roboto', sans-serif; font-size: 1rem; color: #722F37;">
+      Be the first to know about the latest updates and news.
+    </p>
+    <form action="https://formspree.io/f/xeokpayw" method="POST" style="display: flex; justify-content: center; gap: 10px; margin-top: 10px;">
+      <input type="email" name="email" placeholder="Email Address" required style="padding: 10px; font-size: 1rem; border: 2px solid #722F37; border-radius: 8px;">
+      <button type="submit" style="padding: 10px 20px; font-size: 1rem; background-color: #722F37; color: #fff; border-radius: 8px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);">
+        Subscribe
+      </button>
+    </form>
+  </div>
+</section>
 
-  <!-- Footer -->
   <footer>
-    <p>Made with ❤ by Nur Hidayah | <a href="#hero">Back to Top</a></p>
+    Made with ❤ by Nur Hidayah | <a href="#hero">Back to Top</a>
   </footer>
 
 </body>

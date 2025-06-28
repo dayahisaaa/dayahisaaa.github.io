@@ -9,9 +9,9 @@
 nav#sidebar {
   position: fixed;
   top: 0;
-  right: -250px; /* Hidden by default */
+  right: 200px; /* Hidden by default */
   height: 100%;
-  width: 250px;
+  width: 200px;
   background: white;
   box-shadow: -2px 0 4px rgba(0, 0, 0, 0.1);
   display: flex;
@@ -65,7 +65,7 @@ nav#sidebar a:hover {
       background-color: #722F37; /* Wine */
       color: white;
       text-align: center;
-      padding: 20px;
+      padding: 10px;
     }
 
     header .name {
@@ -78,7 +78,7 @@ nav#sidebar a:hover {
       top: 0;
       right: 0;
       background-color: #722F37; /* Wine */
-      padding: 10px 20px;
+      padding: 20px 10px;
       z-index: 1000;
     }
 
@@ -88,7 +88,7 @@ nav#sidebar a:hover {
       font-family: 'Roboto', sans-serif;
       font-weight: bold;
       margin: 0 15px;
-      padding: 8px 15px;
+      padding: 20px 10px;
       border-radius: 20px;
       transition: background-color 0.3s ease;
     }
@@ -100,7 +100,7 @@ nav#sidebar a:hover {
 
     #hero {
       position: relative;
-      height: 100vh;
+      min-height: 100vh;
       color: white;
       text-align: center;
       overflow: hidden;
@@ -111,8 +111,8 @@ nav#sidebar a:hover {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
-      object-fit: cover;
+      min-height: 100%;
+      object-fit: contain;
       z-index: -1;
     }
 
@@ -125,7 +125,7 @@ nav#sidebar a:hover {
     }
 
     #hero h1 {
-      font-size: 3rem;
+      font-size: 2rem;
       font-family: 'Dancing Script', cursive;
       margin-bottom: 20px;
     }
@@ -141,7 +141,7 @@ nav#sidebar a:hover {
 
     h2 {
       font-family: 'Roboto', sans-serif;
-      font-size: 2.5rem;
+      font-size: 2rem;
       color: #E91E63; 
       margin-bottom: 20px;
     }
@@ -204,7 +204,7 @@ nav#sidebar a:hover {
 
      .colorful-name {
     font-family: 'Roboto';
-    font-size: 4rem;
+    font-size: 2rem;
     font-weight: bold;
     display: inline-block;
     display: flex;
@@ -313,9 +313,9 @@ nav#sidebar a:hover {
       top: 0;
       left: 0;
       width: 100%;
-      height: 100%;
+      min-height: 100%;
       z-index: 1;
-      overflow: hidden;
+      overflow-x: hidden;
     }
 
     .shape {
@@ -325,6 +325,7 @@ nav#sidebar a:hover {
       background: rgba(255, 255, 255, 0.1);
       border-radius: 50%;
       animation: floatShapes 12s ease-in-out infinite;
+      overflow-x: hidden;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     }
 
@@ -333,7 +334,7 @@ nav#sidebar a:hover {
       left: 15%;
       animation-delay: 2s;
       width: 100px;
-      height: 100px;
+      min-height: 100px;
     }
 
     .shape:nth-child(2) {
@@ -348,8 +349,8 @@ nav#sidebar a:hover {
       top: 80%;
       left: 30%;
       animation-delay: 6s;
-      width: 120px;
-      height: 120px;
+      width: 100px;
+      min-height: 100px;
     }
 
     @keyframes floatShapes {
@@ -363,3 +364,27 @@ nav#sidebar a:hover {
         transform: translateY(0) rotate(0deg);
       }
     }
+@media (max-width: 768px) {
+    body {
+        font-size: 14px; /* Adjust base font size */
+    }
+    nav#sidebar {
+        width: 200px; /* Smaller sidebar */
+    }
+    .colorful-name {
+        font-size: 2rem; /* Scale font */
+    }
+    #hero {
+        height: auto;
+        padding: 20px;
+    }
+    #hero h1 {
+        font-size: 2rem;
+    }
+    section {
+        padding: 20px 10px;
+    }
+    .work-image img {
+        max-width: 90%; /* Prevent overflow */
+    }
+}
